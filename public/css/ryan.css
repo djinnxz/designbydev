@@ -1,0 +1,226 @@
+html {
+  background-image: url("https://s3.amazonaws.com/ryport/bg_fade.png");
+  background-position: center bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100%;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+* h1 {
+    font-family: 'Sansita', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  text-decoration: none;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    overflow-x: hidden;
+    overflow-wrap: break-word;
+}
+
+nav {
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    bottom: 0;
+    background-color: #777;
+    width: 200px;
+    transform: translate3d(-200px, 0, 0);
+    transition: transform 0.5s ease;
+}
+
+.active-nav nav {
+    transform: translate3d(0, 0, 0);
+}
+
+nav ul {
+    list-style: none;
+    margin-top: 75px;
+}
+
+
+nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 10px 0;
+    border-bottom: 1px solid white;
+}
+
+nav h1 {
+    text-align: center;
+    color: white;
+    margin-top: 35px;
+    margin-bottom: -35px;
+}
+
+.topButton {
+    border-top: 1px solid white;
+}
+
+.navToggle {
+    transition: 1s ease;
+    display: block;
+    position: absolute;
+    left: 200px;
+    width: 40px;
+    height: 40px;
+    margin: 0 auto;
+}
+
+.active-nav .navToggle {
+  transition: 0.2s ease;
+  display: block;
+  position: absolute;
+  left: 160px;
+  width: 40px;
+  height: 40px;
+  margin: 0 auto;
+  background-color: white;
+  border-bottom-left-radius: 10px;
+}
+
+.navToggle img {
+    width: 100%;
+}
+
+.navIconText {
+  color: white;
+}
+
+.bodyWrapper {
+    padding-top: 50px;
+    transition: transform 0.5s ease;
+    transition: 0.5s;
+}
+
+.active-nav .bodyWrapper {
+    transition: 0.5s ease;
+    transform: translate3d(200px, 0, 0);
+    margin-right: 150px;
+    margin-left: -75px;
+}
+
+.bodyContent {
+    width: 75%;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.skillsContent {
+  transition: 1s ease;
+  width: 65%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.active-nav .skillsContent {
+  transition: 1s ease;
+  width: 70%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.leftWrapper {
+    width: 250px;
+    float: left;
+    box-sizing: border-box;
+}
+
+.leftWrapperAlt {
+    width: 250px;
+    float: left;
+    position: inherit;
+    box-sizing: border-box;
+    margin-left: 75px;
+}
+
+.middleWrapper {
+    width: 250px;
+    float: left;
+    margin-left: 25px;
+    box-sizing: border-box;
+    margin-left: 75px;
+    text-align: right;
+}
+
+.rightWrapper {
+    width: 250px;
+    float: right;
+    text-align: right;
+    box-sizing: border-box;
+}
+
+.rightWrapperAlt {
+    width: 250px;
+    float: left;
+    text-align: right;
+    box-sizing: border-box;
+    margin-left: 75px;
+}
+
+.networkContent {
+  width: 152px;
+  margin-left: 47%;
+  margin-right: 50%;
+  text-align: center;
+  overflow: hidden;
+  transition: 0.5s ease;
+}
+
+.active-nav .networkContent {
+  width: 152px;
+  margin-left: 45%;
+  margin-right: 50%;
+  text-align: center;
+  transition: 0.5s ease;
+}
+
+.networkContent ul {
+  list-style: none;
+}
+
+.networkContent ul li {
+
+}
+
+.networkContent a {
+  color: white;
+  background-color: rgba(50, 50, 50, 0.50);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.networkContent a:hover {
+  color: white;
+  background-color: rgba(50, 50, 50, 0.75);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-top: 25px;
+}
+
+.socialWrapper img {
+  background-color: red;
+  border-radius: 50%;
+  border: 1px solid #4f5364;
+  width: 150px;
+  height: 150px;
+  margin: 0 auto;
+  overflow: hidden;
+}
