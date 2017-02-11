@@ -323,6 +323,7 @@ nav ul li a:hover {
 
 .pricing-content-wrap {
     max-width: 800px;
+    display: flex;
 }
 
 .service-header {
@@ -369,6 +370,25 @@ nav ul li a:hover {
     max-width: 95%;
     border: 1px solid lightseagreen;
     margin-bottom: 15px;
+}
+
+.pricing-content h1 {
+  text-align: center;
+}
+
+.simplePrice {
+  width: 250px;
+  order: 1;
+}
+
+.generalPrice {
+  width: 250px;
+  order: 2;
+}
+
+.advancedPrice {
+  width: 250px;
+  order: 3;
 }
 
 /* FOOTER */
