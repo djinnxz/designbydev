@@ -315,6 +315,62 @@ nav ul li a:hover {
     background: rgba(25, 25, 25, 0.5);
 }
 
+/* SERVICES */
+
+.service-content-wrap {
+    max-width: 800px;
+}
+
+.pricing-content-wrap {
+    max-width: 800px;
+}
+
+.service-header {
+    position: relative;
+    background-color: mediumpurple;
+    top: 50px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    max-width: 95%;
+}
+
+.price-header {
+    margin-top: 50px;
+    position: relative;
+    background-color: lightseagreen;
+    top: 50px;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    max-width: 95%;
+}
+
+.service-content {
+    background-color: white;
+    min-height: 100%;
+    top: 50px;
+    position: relative;
+    padding: 15px;
+    max-width: 95%;
+    border: 1px solid mediumpurple;
+}
+
+.service-content ul {
+    list-style: none;
+}
+
+.pricing-content {
+    background-color: white;
+    min-height: 100%;
+    top: 50px;
+    position: relative;
+    padding: 15px;
+    max-width: 95%;
+    border: 1px solid lightseagreen;
+    margin-bottom: 15px;
+}
+
 /* FOOTER */
 
 footer {
