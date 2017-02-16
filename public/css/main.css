@@ -50,6 +50,7 @@ nav ul li a:hover {
 .dropDown {
     font-size: 1em;
     z-index: 1;
+    
     transition: 0.5s ease;
     width: 100%;
     background-color: white;
@@ -457,7 +458,7 @@ nav {
     text-align: center;
     position: fixed;
     z-index: 1;
-    transform: translate3d(0, -12em, 0);
+    transform: translate3d(0, -10em, 0);
 }
 
 nav ul {
@@ -497,7 +498,7 @@ nav ul li a:hover {
 
 .active-nav .dropDown {
     transition: 0.5s ease;
-    transform: translate3d(0, 12em, 0);
+    transform: translate3d(0, 10em, 0);
     background-color: rgba(50, 50, 50, 0.3);
     color: white;
 }
