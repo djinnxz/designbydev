@@ -714,13 +714,15 @@ nav ul li a:hover {
 
 .comingSoon {
     margin-top: 100px;
-    padding: 50px;
+    margin-bottom: 100px;
+    padding: 3em;
     color: white;
     text-align: center;
     text-shadow: 2px 2px 8px #777;
     position: fixed;
     z-index: -2000;
     font-size: .6em;
+    width: 100%;
 }
 
 .comingSoon form {
@@ -728,7 +730,6 @@ nav ul li a:hover {
     margin-top: 50px;
     padding: 25px;
     width: 100%;
-    max-width: 500px;
     border: 1px solid white;
     -webkit-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
     -moz-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
@@ -736,7 +737,7 @@ nav ul li a:hover {
 }
 
 .comingSoon form input {
-    width: 80%;
+    width: 100%;
     max-width: 300px;
     padding: 10px;
     margin-top: 15px;
@@ -789,7 +790,7 @@ footer h5 {
 
 .pricing-content-wrap {
     max-width: 800px;
-    display: flex;
+    display: block;
     overflow: hidden;
 }
 
@@ -800,6 +801,7 @@ footer h5 {
     text-align: center;
     color: white;
     max-width: 800px;
+    top: 0;
 }
 
 .price-header {
@@ -835,6 +837,7 @@ footer h5 {
     margin-bottom: 15px;
     font-size: .7em;
     border: none;
+    margin-bottom: 150px;
 }
 
 .pricing-content h1 {
@@ -843,16 +846,16 @@ footer h5 {
 
 .simplePrice {
   width: 250px;
-  order: 1;
+  
 }
 
 .generalPrice {
   width: 250px;
-  order: 2;
+  
 }
 
 .advancedPrice {
   width: 250px;
-  order: 3;
+  
 }
 }
