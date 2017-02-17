@@ -8,23 +8,20 @@ router.get('/', function(req, res, user){
 });
 
 router.get('/home', function(req, res, user){
-    res.render('home', {layout: false});
+    res.render('home');
 });
 
 router.get('/services', function(req, res, user){
-    res.render('services', {layout: false});
+    res.render('services');
 });
 
-router.get('/about', function(req, res, user){
-    res.render('about', {layout: false});
-});
 
-router.get('/contact', function(req, res, user){
-    res.render('contact', {layout: false});
+router.get('/info', function(req, res, user){
+    res.render('info');
 });
 
 router.get('/work', function(req, res, user){
-    res.render('work', {layout: false});
+    res.render('work');
 });
 
 router.get('/ryan/home', function(req, res, user){

@@ -1,68 +1,47 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html>
-  <head>
-      <title>SkyStream | Welcome!</title>
-      <link type="text/css" rel="stylesheet" href="/css/main.css">
-      <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
-      <script src="/js/dropdownMenu.js"></script>
-  </head>
+
+<head>
+    <title>Design By Dev</title>
+    <link type="text/css" rel="stylesheet" href="/css/main.css" media="all">
+    <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="content-type" content="text/html;charset=utf-8"/>
+    <meta name=”description” content=”Design By Dev aims to create aesthetically pleasing web UIs and web apps.”>
+    <link rel=”author” href=”https://plus.google.com/u/0/107007386824121938226”/>
+    <link rel=”publisher” href=”https://plus.google.com/u/0/107007386824121938226”/>
+    <meta property=”og:title” content=”Beautiful Custom Built Websites | Design By Dev”/>
+    <!--<meta property=”og:image” content=”http://www.iacquire.com/some-thumbnail.jpg”/>-->
+    <meta property=”og:description” content=”Looking for elegant, resonsive websites custom built for your needs? Look no further! We have you covered!”/>
+    <meta property=”og:url” content=”http://www.designbydev.com”/>
+    <meta property=”og:type” content=”website”/>
+    <meta property=”fb:admins” content=”100005644864405”/>
+</head>
+
+    <body>
+        <nav>
+            <ul>
+                <li><a href="/home">HOME</a></li>
+                <li><a href="/info">INFO</a></li>
+                <li><a href="/work">WORK</a></li>
+                <li><a href="/services">SERVICES</a></li>
+            </ul>
+        </nav>
+
+        <button class="dropDown" class="dropDown"><h4>MENU</h4></button>
 
   <body>
 
-    <nav>
-      {{#if user}}
-      <div class="dropdown">
-        <button onclick="dropMenu()" class="dropbtn"></button>
-        <div id="myDropdown" class="dropdown-content">
-          <h3>Hello, {{user.username}}.</h3>
-          <a href="/nodes/{{user.id}}">My Profile</a>
-        </div>
-      </div>
-      {{/if}}
-
-
-        <div id="navWrapper">
-            <div class="navSearch" id="navSearch">
-                <img src="/img/search.png" />
-                <form id="search">
-                    <input type="text" placeholder="" />
-                </form>
-            </div>
-
-            <div id="links">
-                <ul>
-                    <li><a href="/">HOME</a></li>
-                    <li><a href="/browse">NODES</a></li>
-                    {{#if user}}
-                      <li><a href="/stream">STREAM</a></li>
-                      <li><a href="/logout">LOGOUT</a></li>
-                    {{else}}
-                      <li><a href="/register">REGISTER</a></li>
-                      <li><a href="/login">LOGIN</a></li>
-                    {{/if}}
-                </ul>
-            </div>
-
-            <h2>SKY<font color="skyblue">STREAM</font></h2>
-        </div>
-
-    </nav>
-
-          {{#if success_msg}}
-            <div class="success"><h1>{{success_msg}}</h1></div>
-          {{/if}}
-
-          {{#if error_msg}}
-                  <div class="errorMsg"><h1>{{error_msg}}</h1></div>
-          {{/if}}
-
-          {{#if error}}
-                  <div class="missingInfo"><h1>{{error}}</h1></div>
-          {{/if}}
 
     {{{body}}}
 
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="js/navShow.js"></script>
   </body>
-</html>
+<!--
+  <footer>
+    <h5>2017 Copyright Devin Wood</h5>
+  </footer>
+-->
+  </html>

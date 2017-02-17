@@ -50,7 +50,7 @@ nav ul li a:hover {
 .dropDown {
     font-size: 1em;
     z-index: 1;
-    
+
     transition: 0.5s ease;
     width: 100%;
     background-color: white;
@@ -113,6 +113,53 @@ nav ul li a:hover {
     display: block;
     height: 20vh;
 
+}
+
+.info-wrap {
+    color: white;
+    max-width: 800px;
+    width: 85%;
+    margin-top: 5em;
+    margin-bottom: 100px;
+    border: 1px solid white;
+    background-color: rgba(50, 50, 50, 0.55);
+    padding: 20px;
+    padding-bottom: 35px;
+    -webkit-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+    -moz-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+    box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+    border-bottom-left-radius: 5px;
+    border-top-right-radius: 5px;
+    -moz-border-bottom-left-radius: 5px;
+    -moz-border-top-right-radius: 5px;
+    -webkit-border-bottom-left-radius: 5px;
+    -webkit-border-top-right-radius: 5px;
+    display: flex;
+}
+
+.contact-content h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+.about-content h1 {
+  text-align: center;
+  padding: 1em;
+}
+
+.about-content {
+  text-align: left;
+}
+
+.aboutPic {
+  width: 15em;
+  border-radius: 50%;
+  display: block;
+  border: 5px solid white;
+}
+
+.about-content p {
+  width: 25em;
 }
 
 .body-content {
@@ -434,7 +481,7 @@ footer h5 {
 
 
 @media  (max-width: 768px) {
-    
+
     /* GENERAL */
 
 * {
@@ -544,8 +591,44 @@ nav ul li a:hover {
     content: '';
     display: block;
     height: 20vh;
-    
+
 }
+
+.info-wrap {
+  display: block;
+  color: white;
+  max-width: 800px;
+  width: 85%;
+  margin-top: 5em;
+  margin-bottom: 100px;
+  border: 1px solid white;
+  background-color: rgba(50, 50, 50, 0.55);
+  padding: 20px;
+  padding-bottom: 35px;
+  -webkit-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+  -moz-box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+  box-shadow: 0px 38px 28px -20px rgba(0,0,0,0.55);
+  border-bottom-left-radius: 5px;
+  border-top-right-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -moz-border-top-right-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  -webkit-border-top-right-radius: 5px;
+}
+
+.contact-content {
+  text-align: center;
+}
+
+.aboutPic {
+  width: 10em;
+}
+
+.about-content p {
+  width: 15em;
+  font-size: 0.8em;
+}
+
 
 .body-content {
     max-width: 800px;
@@ -592,7 +675,7 @@ nav ul li a:hover {
 }
 
 .bodyContent a{
-    
+
 }
 
 #work {
@@ -644,11 +727,11 @@ nav ul li a:hover {
 .recentProjects {
     padding: 10px;
     width: 100%;
-    
+
     background-color: rgb(100, 100, 100);
     -webkit-box-shadow: inset 0px 0px 48px -2px rgba(0,0,0,0.75);
     -moz-box-shadow: inset 0px 0px 48px -2px rgba(0,0,0,0.75);
-    box-shadow: inset 0px 0px 48px -2px rgba(0,0,0,0.75);    
+    box-shadow: inset 0px 0px 48px -2px rgba(0,0,0,0.75);
 }
 
 .recentProjects h1 {
@@ -780,12 +863,12 @@ footer h5 {
   width: 100%;
   background-color: ghostwhite;
   margin-top: 200px;
-  
+
 }
 
 .service-content-wrap {
     max-width: 800px;
-    
+
 }
 
 .pricing-content-wrap {
@@ -846,16 +929,16 @@ footer h5 {
 
 .simplePrice {
   width: 250px;
-  
+
 }
 
 .generalPrice {
   width: 250px;
-  
+
 }
 
 .advancedPrice {
   width: 250px;
-  
+
 }
 }
