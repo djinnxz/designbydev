@@ -802,7 +802,6 @@ nav ul li a:hover {
     color: white;
     text-align: center;
     text-shadow: 2px 2px 8px #777;
-    position: fixed;
     z-index: -2000;
     font-size: .6em;
     width: 100%;
