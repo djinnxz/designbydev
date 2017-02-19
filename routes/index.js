@@ -2,7 +2,11 @@ var express = require('express');
 var app = express();
 var router = express.Router();
 
-//GET index
+
+router.get('/sitemap', function(req, res, user){
+    res.sendFile('sitemap.txt'));
+});
+
 router.get('/', function(req, res, user){
     res.render('index', {layout: false});
 });

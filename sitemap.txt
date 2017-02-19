@@ -1,0 +1,5 @@
+http:www.designbydev.com/
+http:www.designbydev.com/home
+http:www.designbydev.com/info
+http:www.designbydev.com/work
+http:www.designbydev.com/services
