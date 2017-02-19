@@ -13,6 +13,11 @@ var sitemap = sm.createSitemap ({
       ]
     });
 
+router.get('/robots.txt', function (req, res) {
+    res.type('text/plain');
+    res.send("User-agent: *\nDisallow: /");
+});
+
 router.get('/sitemap.xml', function(req, res) {
   sitemap.toXML( function (err, xml) {
           if (err) {
