@@ -3,19 +3,25 @@ var app = express();
 var router = express.Router();
 var sm = require('sitemap');
 var sitemap = sm.createSitemap ({
-      hostname: 'http://example.com',
+      hostname: 'http://www.designbydev.com',
       cacheTime: 600000,        // 600 sec - cache purge period
       urls: [
         { url: '/home',  changefreq: 'daily', priority: 0.3 },
-        { url: '/info',  changefreq: 'monthly',  priority: 0.7 },
-        { url: '/page-3/'},    // changefreq: 'weekly',  priority: 0.5
-        { url: '/page-4/',   img: "http://urlTest.com" }
+        { url: '/info',  changefreq: 'daily', priority: 0.3 },
+        { url: '/work',   changefreq: 'daily', priority: 0.3 },
+        { url: '/services'} //,   img: "http://urlTest.com" }
       ]
     });
 
-router.get('/sitemap', function(req, res, user){
-    res.sendFile('sitemap.txt');
-});
+router.get('/sitemap.xml', function(req, res) {
+  sitemap.toXML( function (err, xml) {
+          if (err) {
+            return res.status(500).end();
+          }
+          res.header('Content-Type', 'application/xml');
+          res.send( xml );
+      });
+    });
 
 router.get('/', function(req, res, user){
     res.render('index', {layout: false});
