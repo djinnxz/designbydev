@@ -5,7 +5,7 @@ var bodyParser = require('body-parser');
 var exphbs = require('express-handlebars');
 var flash = require('connect-flash');
 var session = require('express-session');
-
+var sys = require('util');
 var routes = require('./routes/index');
 
 // Init App
@@ -46,6 +46,42 @@ app.use(function (req, res, next) {
 
 
 app.use('/', routes);
+
+//MAILER
+var nodemailer = require('nodemailer');
+var hbs = require('nodemailer-express-handlebars');
+var mailer = nodemailer.createTransport({
+  /*
+  host: "smtp-mail.outlook.com",
+  port: 587,
+  secureConnection: false,
+  */
+  service: 'outlook',
+  auth: {
+    user: 'admin@designbydev.com',
+    pass: 'lolcakes@01'
+  },
+  tls: {
+        ciphers:'SSLv3'
+    }
+});
+
+mailer.use('compile', hbs({
+  viewPath: 'views/email',
+  extName: '.hbs'
+}));
+
+app.post('/about', function(req, res, next) {
+    mailer.sendMail({
+      from: 'admin@designbydev.com',
+      to: 'wevindood@gmail.com',
+      subject: 'You\'re awesome!',
+      template: 'welcome',
+      context: {}
+    });
+  });
+
+
 
 // Set Port
 app.set('port', (process.env.PORT || 3000));
