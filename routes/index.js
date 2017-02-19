@@ -15,6 +15,16 @@ router.get('/services', function(req, res, user){
     res.render('services');
 });
 
+router.get('/sitemap', function(req, res, user){
+  var fs = require('fs');
+
+  try {
+      var data = fs.readFileSync('sitemap.txt', 'utf8');
+      res.send(data);
+  } catch(e) {
+      console.log('Error:', e.stack);
+  }
+});
 
 router.get('/info', function(req, res, user){
     res.render('info');
