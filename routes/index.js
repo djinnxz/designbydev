@@ -1,10 +1,20 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
-
+var sm = require('sitemap');
+var sitemap = sm.createSitemap ({
+      hostname: 'http://example.com',
+      cacheTime: 600000,        // 600 sec - cache purge period
+      urls: [
+        { url: '/home',  changefreq: 'daily', priority: 0.3 },
+        { url: '/info',  changefreq: 'monthly',  priority: 0.7 },
+        { url: '/page-3/'},    // changefreq: 'weekly',  priority: 0.5
+        { url: '/page-4/',   img: "http://urlTest.com" }
+      ]
+    });
 
 router.get('/sitemap', function(req, res, user){
-    res.sendFile('sitemap.txt'));
+    res.sendFile('sitemap.txt');
 });
 
 router.get('/', function(req, res, user){
