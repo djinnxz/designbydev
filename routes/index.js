@@ -4,7 +4,7 @@ var router = express.Router();
 
 
 router.get('/sitemap', function(req, res, user){
-    res.sendFile(path.join(__dirname + '/sitemap.txt'));
+    res.sendFile('sitemap.txt'));
 });
 
 router.get('/', function(req, res, user){
